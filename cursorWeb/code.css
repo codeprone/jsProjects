@@ -1,0 +1,10 @@
+div{
+    position: absolute;
+    transform-origin: 0;
+}
+*{
+    transition-duration: 2ms;
+}
+.line{
+    border:0.3px solid black;
+}
