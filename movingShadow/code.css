@@ -1,0 +1,14 @@
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 48, 43);
+}
+p{
+    font-size:6rem;
+    font-weight: bolder;
+    color: cyan;
+}
