@@ -1,0 +1,41 @@
+.align-left{
+    float:left;
+    transform: translateX(-200%) scale(.5);
+    opacity: 0;
+}
+.align-right{
+    float:right;
+    transform: translateX(200%) scale(.5);
+    opacity: 0;
+}
+*{
+    transition-duration: .8s;
+}
+.site-wrap{
+    width:80%;
+    box-align: center;
+    margin: 100px auto;
+    background-color: white;
+    padding: 4rem;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.slide-in{
+    margin: 2rem;
+}
+body{
+    background-color: cadetblue;
+}
+.show-effect{
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+}
+.process-bar{
+    width:100%;
+    position: fixed;
+    top: 0px;
+    height: 2rem;
+    background-color:rgb(124, 42, 42);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1;
+}

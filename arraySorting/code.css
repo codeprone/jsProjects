@@ -1,0 +1,25 @@
+td {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding-left: 2rem;
+}
+table{
+    border-collapse: collapse;
+    width: 16rem;
+}
+tr:nth-child(2n){
+    background-color: rgb(162, 190, 190);
+}
+tr{
+    height: 3rem;
+    text-align: left;
+    text-emphasis: padding;
+}
+li{
+    list-style: square;
+}
+tr:hover{
+    background-color:rgb(50, 67, 87);
+    color:white;
+    transform:scale(1.06);
+}
