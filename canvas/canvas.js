@@ -18,14 +18,13 @@ class circle {
         this.y = Math.random()*(innerHeight-2*this.radius) + this.radius;
         this.dx = (Math.random()- 0.5)*4;
         this.dy = (Math.random()- 0.5)*4;
-        this.array = ["#abcdef","#123456","#aabbcc","#ddeeff","red","brown","#123abc"];
+        this.array = ["#c51244","#1a509e","#3183B3","#6EB2C0","red","FFFFFF","#123abc"];
+        this.color = this.array[Math.round(Math.random()*7 - 1)];
     }
     create(){
         c.beginPath();
         c.arc(this.x,this.y,this.radius,0,Math.PI*2,true);
-        c.fillStyle = this.array[Math.round(Math.random()*7 - 1)];
-        c.strokeStyle = "black";
-        c.stroke();
+        c.fillStyle = this.color;
         c.fill();
     }
     move(){
@@ -43,7 +42,7 @@ class circle {
             this.radius-=2;
     }
 };
-var n=600;
+var n=900;
 var circles=[];
 for(var i=0;i<n;i++)
     circles[i]=new circle();
